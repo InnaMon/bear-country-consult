@@ -327,6 +327,9 @@
 
 	#header
 	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 /*********************************************************************************/
@@ -337,39 +340,18 @@
 	{
 		padding: 5em 0em;
 		text-align: center;
+		width: 70%;
 	}
 	
-	#logo h1
+	/* #logo h1
 	{
 		font-size: 3.5em;
-	}
-	
-	#logo a
-	{
-		text-decoration: none;
-		color: #FFF;
-	}
-	
-	#logo span
-	{
-		letter-spacing: 0.10em;
-		text-transform: uppercase;
-		font-size: 0.90em;
-		color: rgba(255,255,255,0.5);
-	}
+	} */
 
-	#logo span a
-	{
-		color: rgba(255,255,255,0.8);
+	#logo img {
+		width: 100%;
+  		height: auto;
 	}
-	
-	#logo .icon
-	{
-		font-size: 4em;
-		color: rgba(255,255,255,1);
-	}
-	
-	
 
 /*********************************************************************************/
 /* Menu                                                                          */
@@ -618,3 +600,12 @@
 		float: right;
 	}
 	
+/*********************************************************************************/
+/* Media Queries                                                                    */
+/*********************************************************************************/
+@media only screen and (min-width: 1000px) {
+	#logo
+	{
+		width: 60%;
+	}
+}
