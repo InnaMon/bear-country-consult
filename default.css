@@ -321,7 +321,8 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		background: #B03500 url(images/overlay.png) repeat;
+		background: url(images/background.jpg);
+		background-size: cover;
 	}
 
 	#header
