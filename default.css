@@ -15,10 +15,15 @@
 	}
 	
 	
-	h1, h2, h3
+	/* h1, h2, h3
 	{
 		margin: 0;
 		padding: 0;
+	} */
+
+	h2 {
+		margin-bottom: 20px;
+		padding
 	}
 	
 	p, ol, ul
@@ -386,8 +391,7 @@
 		display: inline-block;
 	}
 	
-	#menu li a, #menu li span
-	{
+	#menu li a {
 		display: inline-block;
 		margin-left: 0.50em;
 		padding: 1.5em 1.5em;
@@ -400,8 +404,8 @@
 		color: #FFF;
 	}
 	
-	#menu li:hover a, #menu li.active a, #menu li.active span
-	{
+	#menu li:hover a, #menu li.active a {
+		color: rgba(255,255,255,0.6);
 	}
 	
 	#menu .current_page_item a
@@ -425,6 +429,8 @@
 	#wrapper1
 	{
 		background: #242424;
+		width: 100%;
+		margin: auto;
 	}
 
 	#wrapper2
@@ -458,19 +464,29 @@
 		padding: 8em 0em;
 		text-align: center;
 		color: rgba(255,255,255,0.3);
+		width: 100%;
+		margin: auto;
+	}
+
+	#welcome title {
+		padding: 0em 1em;
 	}
 	
 	#welcome .content
 	{
-		padding: 0em 8em;
+		padding: 0em 1em;
 	}
 	
-	
-	
-	#welcome a,
-	#welcome strong
-	{
-		color: rgba(255,255,255,0.6);
+	.welcome-img {
+		text-align: center;
+		width: 70%;
+		margin: auto;
+		padding-top: 30px;
+	}
+
+	.welcome-img img {
+		width: 100%;
+  		height: auto;
 	}
 
 /*********************************************************************************/
@@ -501,7 +517,7 @@
 /* Footer                                                                        */
 /*********************************************************************************/
 
-	#footer
+	/* #footer
 	{
 		text-align: center;
 	}
@@ -510,7 +526,7 @@
 	#footer .title span
 	{
 		color: rgba(255,255,255,0.4);
-	}
+	} */
 
 /*********************************************************************************/
 /* Copyright                                                                     */
@@ -588,7 +604,7 @@
 	#services .title h2
 	{
 		color: rgba(0,0,0,0.8);
-		margin-bottom: 20px;
+		/* margin-bottom: 20px; */
 	}
 
 	.box {
@@ -641,17 +657,25 @@
 		height: 180px;
 		margin-bottom: 20px;
 	}
+
+	#welcome title {
+		padding: 0;
+	}
+
+	#welcome .content
+	{
+		padding: 0em 4em;
+	}
+
+	.welcome-img {
+		width: 40%;
+	}
 }
 
 @media only screen and (min-width: 993px) {
 	#logo
 	{
 		width: 50%;
-	}
-
-	.byline
-	{
-		padding-top: 20px;
 	}
 
 	#services .box
@@ -663,5 +687,14 @@
 
 	.img-container {
 		height: 160px;
+	}
+
+	#welcome .content
+	{
+		padding: 0em 8em;
+	}
+
+	.welcome-img {
+		width: 35%;
 	}
 }
